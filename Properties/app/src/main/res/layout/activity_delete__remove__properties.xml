@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".props.Delete_Remove_Properties">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/customBottomBar">
+
+            <RelativeLayout
+                android:background="@color/colorLightBlack"
+                android:id="@+id/relative_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back_retail_plan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_left"
+                    android:layout_margin="16dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Property"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/menu_retail_plan"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/menu_hamburger"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_below="@id/relative_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                app:cardCornerRadius="30dp"
+                                android:focusable="true"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackground"
+
+                                android:layout_width="200dp"
+                                android:layout_height="300dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="20dp">
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:id="@+id/profileImageUrl"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/real_estate_create_property"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:text="Create Property"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:textSize="12sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </android.support.v7.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="20dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="84dp"
+                                    android:src="@drawable/house"/>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Name: "
+                                        android:textStyle="bold"/>
+
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/propertyName_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Make : "
+                                        android:textStyle="bold"/>
+
+
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/property_make_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Condition : "
+                                        android:textStyle="bold"/>
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/property_state_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Qwner : "
+                                        android:textStyle="bold"/>
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/property_owner_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Price : "
+                                        android:textStyle="bold"/>
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/property_price_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Description : "
+                                        android:textStyle="bold"/>
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/property_description_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="20dp"
+                                android:gravity="center"
+                                android:layout_width="190dp"
+                                android:layout_height="350dp"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="84dp"
+                                    android:src="@drawable/house"/>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bed Count : "
+                                        android:textStyle="bold"/>
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/bed_count_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bathing Count :"
+                                        android:textStyle="bold"/>
+
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/bath_count_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Parking Count :"
+                                        android:textStyle="bold"/>
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/parking_count_tv"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Seller : "
+                                        android:textStyle="bold"/>
+
+
+
+                                    <TextView
+                                        android:id="@+id/property_seller_username"
+                                        android:layout_marginLeft="4dp"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Date added :"
+                                        android:textStyle="bold"/>
+
+
+
+
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:id="@+id/property_date_added"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="8dp"
+                                        android:lineSpacingExtra="0dp"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.CardView
+                                app:cardCornerRadius="30dp"
+                                android:focusable="true"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackground"
+
+                                android:layout_width="200dp"
+                                android:layout_height="300dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginRight="20dp">
+
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:id="@+id/coverImageUrl"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/real_estate_create_property"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="4dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:text=""
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+
+
+                                    <TextView
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:textSize="12sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=""
+                                        />
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </android.support.v7.widget.CardView>
+
+
+
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_marginBottom="30dp"
+                            app:cardCornerRadius="30dp"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:id="@+id/buy"
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/grad"
+                            android:layout_marginRight="20dp">
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="22sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Remove"
+                                />
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <com.codeimagination.properties.utils.CurvedBottomNavigationView
+            android:id="@+id/customBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_id"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="32dp"
+        android:background="@drawable/circle">
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:visibility="gone"
+            app:elevation="6dp"
+            app:vector_src="@drawable/ic_home_white_24dp" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            app:elevation="6dp"
+            app:vector_src="@drawable/ic_dashboard_white_24dp" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:visibility="gone"
+            app:elevation="6dp"
+            app:vector_src="@drawable/ic_account_circle_black_24dp" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

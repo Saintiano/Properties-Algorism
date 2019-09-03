@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Home">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@id/customBottomBar">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:background="@color/colorLightBlack"
+                        android:paddingBottom="1dp"
+                        android:clickable="true"
+                        android:id="@+id/menu_side_bar"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent">
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="32dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_centerInParent="true"
+                                    android:padding="8dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/profile_image"
+                                    android:id="@+id/profile_image"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp" />
+
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:layout_gravity="center"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="55dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="username"
+                                    android:textStyle="bold"/>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:background="@drawable/circle"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    app:cardCornerRadius="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/img_drugs"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_centerInParent="true"
+                                        android:padding="16dp"
+                                        android:src="@drawable/user_settings" />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    app:cardCornerRadius="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/img_profile"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_centerInParent="true"
+                                        android:padding="16dp"
+                                        android:src="@drawable/name_plate"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    app:cardCornerRadius="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/img_drugHistory"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_centerInParent="true"
+                                        android:padding="16dp"
+                                        android:src="@drawable/best_seller"
+                                         />
+
+                                </android.support.v7.widget.CardView>
+
+                                <TextView
+                                    android:id="@+id/createPropery"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginBottom="35dp"
+                                    android:rotation="-90"
+                                    android:text="Remove Property"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:tint="@color/icon_tint_color" />
+
+                                <TextView
+                                    android:id="@+id/updateProperties"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="35dp"
+                                    android:rotation="-90"
+                                    android:text="Create Property"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:tint="@color/icon_tint_color" />
+
+                                <TextView
+                                    android:id="@+id/sideMenu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="60dp"
+                                    android:rotation="-90"
+                                    android:text="Update Property"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    android:tint="@color/icon_tint_color" />
+
+
+                            </LinearLayout>
+
+                        </android.support.v4.widget.NestedScrollView>
+
+                    </RelativeLayout>
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_marginBottom="30dp"
+                            android:id="@+id/main_board"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:background="@color/colorLightBlack"
+                                android:id="@+id/relative_layout_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/back_retail_plan"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/arrow_left"
+                                    android:layout_margin="16dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_alignParentStart="true"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dashboard"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15sp"
+                                    android:layout_centerInParent="true"
+                                    android:textStyle="bold"
+                                    />
+
+                                <ImageView
+                                    android:id="@+id/menu_retail_plan"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/menu_hamburger"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="16dp"
+                                    />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_below="@+id/relative_layout_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <android.support.v7.widget.CardView
+
+                                            android:focusable="true"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            android:id="@+id/create_property_card"
+                                            android:layout_width="140dp"
+                                            android:layout_height="160dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:layout_marginRight="20dp">
+
+
+                                            <LinearLayout
+                                                android:gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+
+                                                <ImageView
+
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="84dp"
+                                                    android:src="@drawable/real_estate_create_property"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="4dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginRight="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:text="Create Property"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+
+
+                                                <TextView
+                                                    android:layout_marginLeft="4dp"
+                                                    android:layout_marginRight="4dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:textSize="12sp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text=""
+                                                    />
+
+
+
+                                            </LinearLayout>
+
+
+
+
+                                        </android.support.v7.widget.CardView>
+
+                                        <android.support.v7.widget.CardView
+
+                                            android:focusable="true"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            android:id="@+id/view_properties"
+                                            android:layout_width="140dp"
+                                            android:layout_height="160dp"
+                                            android:layout_marginLeft="4dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:layout_marginRight="4dp"
+                                            android:layout_marginBottom="8dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            >
+
+                                            <LinearLayout
+
+                                                android:gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="84dp"
+                                                    android:src="@drawable/house"/>
+
+                                                <TextView
+                                                    android:textSize="12sp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="View Properties"
+                                                    android:textStyle="bold"/>
+
+
+
+                                                <TextView
+                                                    android:textSize="12sp"
+                                                    android:layout_marginTop="8dp"
+                                                    android:lineSpacingExtra="0dp"
+                                                    android:gravity="center"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text=""
+                                                    />
+
+                                            </LinearLayout>
+
+                                        </android.support.v7.widget.CardView>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <android.support.v7.widget.CardView
+
+                                            android:focusable="true"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            android:id="@+id/view_bought_properties"
+                                            android:layout_width="140dp"
+                                            android:layout_height="160dp"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:layout_marginRight="20dp">
+
+
+                                            <LinearLayout
+                                                android:gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+
+                                                <ImageView
+                                                    android:layout_marginTop="15dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="84dp"
+                                                    android:src="@drawable/shopping_bought"/>
+
+                                                <TextView
+                                                    android:layout_gravity="center"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="4dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginRight="4dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:text="View Bought \n\Properties"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+
+
+                                                <TextView
+                                                    android:layout_marginLeft="4dp"
+                                                    android:layout_marginRight="4dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginBottom="4dp"
+                                                    android:textSize="12sp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text=""
+                                                    />
+
+
+
+                                            </LinearLayout>
+
+
+
+
+                                        </android.support.v7.widget.CardView>
+
+                                        <android.support.v7.widget.CardView
+
+                                            android:focusable="true"
+                                            android:clickable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            android:id="@+id/view_deleted_properties"
+                                            android:layout_width="140dp"
+                                            android:layout_height="160dp"
+                                            android:layout_marginLeft="4dp"
+                                            android:layout_marginTop="0dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:layout_marginRight="4dp"
+                                            android:layout_marginBottom="8dp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            >
+
+                                            <LinearLayout
+
+                                                android:gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+
+                                                <ImageView
+                                                    android:layout_marginTop="15dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="84dp"
+                                                    android:src="@drawable/eraser_property_removed"/>
+
+                                                <TextView
+                                                    android:layout_gravity="center"
+                                                    android:textSize="12sp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Remove/Deleted \n\Properties"
+                                                    android:textStyle="bold"/>
+
+
+
+                                                <TextView
+                                                    android:textSize="12sp"
+                                                    android:layout_marginTop="8dp"
+                                                    android:lineSpacingExtra="0dp"
+                                                    android:gravity="center"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text=""
+                                                    />
+
+                                            </LinearLayout>
+
+                                        </android.support.v7.widget.CardView>
+
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginBottom="30dp"
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:id="@+id/cardBottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="460dp"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="4dp"
+                                    >
+
+                                    <android.support.constraint.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+
+                                        <ImageView
+                                            android:scaleType="centerCrop"
+                                            android:id="@+id/imageViewBottom"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="380dp"
+                                            android:padding="50dp"
+                                            android:src="@drawable/stats_performance_chart"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <Button
+                                            android:padding="10dp"
+                                            android:id="@+id/view_performance_chart"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginEnd="24dp"
+                                            android:layout_marginRight="24dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:background="#3f3af7"
+                                            android:text="View "
+                                            android:textColor="#fff"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imageViewBottom" />
+
+                                        <TextView
+                                            android:padding="10dp"
+                                            android:id="@+id/textViewBottom"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="24dp"
+                                            android:layout_marginLeft="24dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginBottom="8dp"
+                                            android:text="Performance chart"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imageViewBottom"
+                                            />
+                                    </android.support.constraint.ConstraintLayout>
+
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <com.codeimagination.properties.utils.CurvedBottomNavigationView
+            android:id="@+id/customBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_id"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="32dp"
+        android:background="@drawable/circle">
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:visibility="gone"
+            app:elevation="6dp"
+            app:vector_src="@drawable/ic_home_white_24dp" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            app:elevation="6dp"
+            app:vector_src="@drawable/ic_dashboard_white_24dp" />
+
+        <com.sdsmdg.harjot.vectormaster.VectorMasterView
+            android:id="@+id/fab2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:visibility="gone"
+            app:elevation="6dp"
+            app:vector_src="@drawable/ic_account_circle_black_24dp" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/slider_background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/sedan_car_front" />
+
+        <TextView
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart view"
+            android:textColor="@color/darkBlue"
+            android:textStyle="bold"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:foreground="?attr/selectableItemBackground"
+            android:textAlignment="center"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See all the views of the property"
+            android:textColor="@color/lightBlue"
+            android:textStyle="italic"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:foreground="?attr/selectableItemBackground"
+            android:textAlignment="center"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="before buying"
+            android:textColor="@color/lightBlue"
+            android:textStyle="italic"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:foreground="?attr/selectableItemBackground"
+            android:textAlignment="center"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/lightBlue"
+            android:textStyle="italic"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

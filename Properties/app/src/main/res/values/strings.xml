@@ -1,0 +1,286 @@
+<resources>
+    <string name="app_name">Properties</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="profile">Profile UI</string>
+
+    <string name="twitterUsername">\@saintiano</string>
+
+    <array name="am_pm_appointment">
+
+        <item>AM</item>
+        <item>PM</item>
+
+    </array>
+
+
+    <array name="month">
+
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </array>
+
+    <string-array name="sex">
+
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="parking_count">
+
+        <item>None</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+
+
+    </string-array>
+
+    <string-array name="bath_count">
+
+        <item>None</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+
+    </string-array>
+
+    <string-array name="bed_count">
+
+        <item>None</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+
+    </string-array>
+
+    <string-array name="property_state">
+
+        <item>Brand New</item>
+        <item>Fairly Used</item>
+        <item>Foreign</item>
+        <item>Nigerian Used</item>
+
+    </string-array>
+
+
+    <string-array name="marital_status">
+
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="genotype">
+
+        <item>AA</item>
+        <item>AS</item>
+        <item>AC</item>
+        <item>SS</item>
+
+    </string-array>
+
+    <string-array name="blood_group">
+
+        <item>AB</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>AB-</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O-</item>
+
+    </string-array>
+
+    <string-array name="minute">
+
+        <item>00</item>
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+
+    </string-array>
+
+    <string-array name="year">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+    </string-array>
+
+    <array name="years">
+
+        <item>- 2019</item>
+        <item>- 2020</item>
+        <item>- 2021</item>
+        <item>- 2022</item>
+        <item>- 2023</item>
+        <item>- 2024</item>
+        <item>- 2025</item>
+        <item>- 2026</item>
+        <item>- 2027</item>
+        <item>- 2028</item>
+        <item>- 2029</item>
+        <item>- 2030</item>
+        <item>- 2031</item>
+        <item>- 2032</item>
+        <item>- 2033</item>
+        <item>- 2034</item>
+
+
+    </array>
+
+    <string-array name="prescribed_type">
+
+        <item>Pill</item>
+        <item>Capsule</item>
+        <item>Syringe</item>
+        <item>Syrup</item>
+        <item>Drops</item>
+        <item>Spray</item>
+        <item>placebo</item>
+        <item>Herbs</item>
+        <item>Traditional</item>
+
+    </string-array>
+
+    <string-array name="prescribed_by">
+
+        <item>Doctor</item>
+        <item>Pharmacist</item>
+        <item>Nurse</item>
+        <item>Health Physician</item>
+        <item>Self-Medication</item>
+
+    </string-array>
+
+    <string-array name="weight">
+
+        <item>Mg</item>
+        <item>Ml</item>
+        <item>Cc</item>
+        <item>Gr</item>
+        <item>Puffs</item>
+        <item>Teaspoon</item>
+        <item>Tablespoon</item>
+        <item>Patch</item>
+        <item>IU</item>
+        <item>Meq</item>
+        <item>Carton</item>
+        <item>Card</item>
+        <item>Counting</item>
+
+    </string-array>
+
+    <array name="dates">
+
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>13th</item>
+        <item>14th</item>
+        <item>15th</item>
+        <item>16th</item>
+        <item>17th</item>
+        <item>18th</item>
+        <item>19th</item>
+        <item>20th</item>
+        <item>21st</item>
+        <item>22nd</item>
+        <item>23rd</item>
+        <item>24th</item>
+        <item>25th</item>
+        <item>26th</item>
+        <item>27th</item>
+        <item>28th</item>
+        <item>29th</item>
+        <item>30th</item>
+        <item>31st</item>
+
+    </array>
+
+    <string-array name="hours">
+
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+
+    </string-array>
+
+    <string name="title_activity_maps__view_">Map</string>
+
+
+</resources>
